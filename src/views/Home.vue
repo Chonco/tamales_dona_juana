@@ -23,7 +23,7 @@
         <div class="contenido">
           <div class="contenedor_articulos">
             <div class="card" id="C1">
-              <span class="titulo_articulo">Sobre nuestros tamales</span>
+              <span class="titulo_articulo"><a href="" class="a_card">nuestros tamales</a></span>
                 <p>
                 Conoce a cerca de nuestra tradicional receta para 
                 concinar tamales de manera tradicional.
@@ -32,7 +32,7 @@
             </div>
 
             <div class="card" id="C2">
-              <span class="titulo_articulo">Sobre nuestros postres</span>
+              <span class="titulo_articulo"><a href="" class="a_card">Sobre nuestros postres</a></span>
                 <p>
                 ¿Interesado en algo dulce después de comer?
                 Conoce nuestra variedad de postres tradicionales. 
@@ -40,7 +40,7 @@
             </div>
 
             <div class="card" id="C3">
-              <span class="titulo_articulo">Especialidades de la casa</span>
+              <span class="titulo_articulo"><a href="" class="a_card">Especialidades de la casa</a></span>
                 <p>
                 Explora las diversas alternativas de nuestros productos.
                 </p>
@@ -108,6 +108,11 @@ header{
   margin-bottom: 1rem;
   font-family: 'Bilbo Swash Caps', cursive;
   font-size: 100px;
+  transition: all 0.5s;
+}
+
+.elemento_header:hover{
+color: #dd8501;
 }
 
 .contenido{
@@ -128,6 +133,7 @@ header{
 	border: 1px solid #CED4DA;
 	height: 100px;
 }
+
 #C1{
   background-image: url("../assets/card1.png");
   background-repeat: no-repeat;
@@ -174,4 +180,14 @@ footer{
   font-size: 25px;
 }
 
+.a_card{
+  text-decoration: none;
+  transition: all 0.5s;
+  color: #522405;
+  
+}
+.a_card:hover{
+  font-size: 26px;
+  color: #c45004;
+}
 </style>
