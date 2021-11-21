@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="home-general-container">
-      <header>
+      <header class="home-header">
         <h1 class="elemento_header">Tamales Doña Juana</h1>
       </header>
       <b-row class="contenido mt-4 match-height">
@@ -10,7 +10,7 @@
             <span class="titulo_articulo">
               <a href="" class="a_card">nuestros tamales</a>
             </span>
-            <p>
+            <p class="articulos-item-text">
               Conoce a cerca de nuestra tradicional receta para concinar tamales
               de manera tradicional. ¡Justo como tu abuelita los haria!
             </p>
@@ -20,7 +20,7 @@
             <span class="titulo_articulo">
               <a href="" class="a_card">Sobre nuestros postres</a>
             </span>
-            <p>
+            <p class="articulos-item-text">
               ¿Interesado en algo dulce después de comer? Conoce nuestra
               variedad de postres tradicionales.
             </p>
@@ -30,18 +30,19 @@
             <span class="titulo_articulo">
               <a href="" class="a_card">Especialidades de la casa</a>
             </span>
-            <p>Explora las diversas alternativas de nuestros productos.</p>
+            <p class="articulos-item-text">
+              Explora las diversas alternativas de nuestros productos.
+            </p>
           </div>
         </b-col>
 
         <b-col cols="3">
-          <img class="contenedor-publicidad" src="../assets/publicidad_ejemplo.png" />
+          <img
+            class="contenedor-publicidad"
+            src="../assets/publicidad_ejemplo.png"
+          />
         </b-col>
       </b-row>
-
-      <footer>
-        <span>Tamales Doña Juana © 2021</span>
-      </footer>
     </div>
   </div>
 </template>
@@ -67,7 +68,7 @@ export default {
   max-width: 100%;
 }
 
-header {
+.home-header {
   background-image: url("../assets/header_tamal2.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -141,21 +142,9 @@ header {
   background-image: url("../assets/publicidad_ejemplo.png");
 }
 
-p {
+.articulos-item-text {
   color: #000000;
   font-family: "Eczar", serif;
-}
-
-footer {
-  align-self: end;
-  display: flex;
-  justify-content: center;
-  color: #f0a70a;
-  font-weight: bold;
-  width: 85%;
-  padding: 15px;
-  font-family: "Bilbo Swash Caps", cursive;
-  font-size: 25px;
 }
 
 .a_card {
