@@ -107,7 +107,7 @@ header {
   flex-direction: column;
   justify-content: center;
 
-  background-image: url("../assets/tamailosFondo.jpg");
+  background-image: url("../assets/aboutFondo.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
 
