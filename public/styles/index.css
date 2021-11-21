@@ -1,0 +1,57 @@
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	background-image: url('../images/tamales_fondo2.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+	height: 84vh;
+	width: 100%;
+}
+
+.header-element {
+	text-align: center;
+	color: #14213D;
+}
+
+h1 {
+	font-size: 72px;
+	font-weight: 300;
+	margin-bottom: 1rem;
+}
+
+h4 {
+	font-size: 20px;
+	font-weight: 200;
+}
+
+.content-page {
+	width: 70%;
+	margin-top: 2rem;
+	display: flex;
+}
+
+.articles-container {
+	flex: 3;
+}
+
+.card {
+	margin-right: 10rem;
+	margin-bottom: 2rem;
+	padding: 1.5rem;
+
+	border-radius: 15px;
+	border: 1px solid #CED4DA;
+}
+
+.content-title {
+	border-bottom: 2px solid #E85D04;
+}
+
+.advertising-container {
+	flex: 1;
+	margin-left: 1rem;
+	background-color: #F48C06;
+}
