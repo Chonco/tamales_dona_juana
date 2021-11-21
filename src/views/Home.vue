@@ -10,7 +10,7 @@
             <span class="titulo_articulo">
               <a href="" class="a_card">nuestros tamales</a>
             </span>
-            <p>
+            <p class="articulos-item-text">
               Conoce a cerca de nuestra tradicional receta para concinar tamales
               de manera tradicional. ¡Justo como tu abuelita los haria!
             </p>
@@ -20,7 +20,7 @@
             <span class="titulo_articulo">
               <a href="" class="a_card">Sobre nuestros postres</a>
             </span>
-            <p>
+            <p class="articulos-item-text">
               ¿Interesado en algo dulce después de comer? Conoce nuestra
               variedad de postres tradicionales.
             </p>
@@ -30,12 +30,17 @@
             <span class="titulo_articulo">
               <a href="" class="a_card">Especialidades de la casa</a>
             </span>
-            <p>Explora las diversas alternativas de nuestros productos.</p>
+            <p class="articulos-item-text">
+              Explora las diversas alternativas de nuestros productos.
+            </p>
           </div>
         </b-col>
 
         <b-col cols="3">
-          <img class="contenedor-publicidad" src="../assets/publicidad_ejemplo.png" />
+          <img
+            class="contenedor-publicidad"
+            src="../assets/publicidad_ejemplo.png"
+          />
         </b-col>
       </b-row>
 
@@ -141,7 +146,7 @@ header {
   background-image: url("../assets/publicidad_ejemplo.png");
 }
 
-p {
+.articulos-item-text {
   color: #000000;
   font-family: "Eczar", serif;
 }

@@ -7,20 +7,23 @@
 
       <div class="content-page">
         <b-row>
-          <b-col cols="3">
+          <b-col cols="2">
             <div class="card">
-              <b-link class="links" href="#nuestraHistoria"
-                >NUESTRA HISTORIA</b-link
-              ><br />
-              <b-link class="links" href="#ahora"
-                >TAMALES DO&Ntilde;A JUANA AHORA</b-link
-              ><br />
-              <b-link class="links" href="#mision">MISI&Oacute;N</b-link><br />
-              <b-link class="links" href="#vision">VISI&Oacute;N</b-link>
+              <b-link class="links" href="#nuestraHistoria">
+                NUESTRA HISTORIA
+              </b-link>
+              <br />
+              <b-link class="links" href="#ahora">
+                TAMALES DO&Ntilde;A JUANA AHORA
+              </b-link>
+              <br />
+              <b-link class="links" href="#mision"> MISI&Oacute;N </b-link>
+              <br />
+              <b-link class="links" href="#vision"> VISI&Oacute;N </b-link>
             </div>
           </b-col>
 
-          <b-col cols="6">
+          <b-col cols="7">
             <div class="articles-container">
               <div class="card" id="nuestraHistoria">
                 <span class="content-title">NUESTRA HISTORIA</span>
@@ -73,9 +76,7 @@
           </b-col>
 
           <b-col cols="3">
-            <aside class="advertising-container">
-              <img src="../assets/donaJuana.jpg" alt="" style="height: 600px" />
-            </aside>
+            <img src="../assets/donaJuana.jpg" alt="" style="height: 600px" />
           </b-col>
         </b-row>
       </div>
@@ -98,6 +99,9 @@ export default {
 </script>
 
 <style>
+.general-container {
+  width: 100%;
+}
 header {
   display: flex;
   flex-direction: column;
@@ -130,6 +134,7 @@ h4 {
 .content-page {
   width: 100%;
   margin-top: 2rem;
+
   display: flex;
 }
 
@@ -147,13 +152,11 @@ h4 {
 .content-title {
   border-bottom: 2px solid #e85d04;
 }
-
-.advertising-container {
-  flex: 1;
-  margin-left: 1rem;
-  background-color: #f48c06;
-}
 .links {
   text-decoration: none;
+  margin-bottom: 0.9rem;
+}
+.links:last-child {
+  margin-bottom: 0;
 }
 </style>
