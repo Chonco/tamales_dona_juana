@@ -3,101 +3,81 @@
   <div>
 
       <div class="general-container">
-			<div class="nav-bar-wrapper">
-				<a href="/index.html" class="home-link">
-					<img
-						src="../../public/images/tamales-donia-juana-logo.jpg"
-						alt="Logo"
-						class="logo"
-					/>
-				</a>
-				<nav>
-					<a href="#" class="link-item">Iniciar Sesión</a>
-					<a href="#" class="link-item">Catálogo</a>
-					<a href="#">
-						<svg
-							version="1.1"
-							id="Capa_1"
-							xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink"
-							x="0px"
-							y="0px"
-							viewBox="0 0 450.391 450.391"
-							style="enable-background: new 0 0 450.391 450.391"
-							xml:space="preserve"
-							class="shopping-cart-icon"
-						>
-							<g>
-								<g>
-									<g>
-										<path
-											d="M143.673,350.322c-25.969,0-47.02,21.052-47.02,47.02c0,25.969,21.052,47.02,47.02,47.02
-				c25.969,0,47.02-21.052,47.02-47.02C190.694,371.374,169.642,350.322,143.673,350.322z M143.673,423.465
-				c-14.427,0-26.122-11.695-26.122-26.122c0-14.427,11.695-26.122,26.122-26.122c14.427,0,26.122,11.695,26.122,26.122
-				C169.796,411.77,158.1,423.465,143.673,423.465z"
-										/>
-										<path
-											d="M342.204,350.322c-25.969,0-47.02,21.052-47.02,47.02c0,25.969,21.052,47.02,47.02,47.02s47.02-21.052,47.02-47.02
-				C389.224,371.374,368.173,350.322,342.204,350.322z M342.204,423.465c-14.427,0-26.122-11.695-26.122-26.122
-				c0-14.427,11.695-26.122,26.122-26.122s26.122,11.695,26.122,26.122C368.327,411.77,356.631,423.465,342.204,423.465z"
-										/>
-										<path
-											d="M448.261,76.037c-2.176-2.377-5.153-3.865-8.359-4.18L99.788,67.155L90.384,38.42
-				C83.759,19.211,65.771,6.243,45.453,6.028H10.449C4.678,6.028,0,10.706,0,16.477s4.678,10.449,10.449,10.449h35.004
-				c11.361,0.251,21.365,7.546,25.078,18.286l66.351,200.098l-5.224,12.016c-5.827,15.026-4.077,31.938,4.702,45.453
-				c8.695,13.274,23.323,21.466,39.184,21.943h203.233c5.771,0,10.449-4.678,10.449-10.449c0-5.771-4.678-10.449-10.449-10.449
-				H175.543c-8.957-0.224-17.202-4.936-21.943-12.539c-4.688-7.51-5.651-16.762-2.612-25.078l4.18-9.404l219.951-22.988
-				c24.16-2.661,44.034-20.233,49.633-43.886l25.078-105.012C450.96,81.893,450.36,78.492,448.261,76.037z M404.376,185.228
-				c-3.392,15.226-16.319,26.457-31.869,27.69l-217.339,22.465L106.58,88.053l320.261,4.702L404.376,185.228z"
-										/>
-									</g>
-								</g>
-							</g>
-						</svg>
-					</a>
-				</nav>
-			</div>
+			
 			<header>
-				<h1 class="header-element" >TAMALES DOÑA JUANA</h1>
+				<h1 class="header-element" >Acerca de nosotros</h1>
 			</header>
 
 			<div class="content-page">
-				<div class="articles-container">
-					<div class="card">
-						<span class="content-title">Articulo 1</span>
+
+                <b-row>
+                    <b-col cols="3">
+
+						<div class="card">
+                            <b-link href="#nuestraHistoria" style="text-decoration:none">NUESTRA HISTORIA</b-link><br>
+                            <b-link href="#ahora" style="text-decoration:none">TAMALES DO&Ntilde;A JUANA AHORA</b-link><br>
+                            <b-link href="#mision" style="text-decoration:none">MISI&Oacute;N</b-link><br>
+                            <b-link href="#vision" style="text-decoration:none">VISI&Oacute;N</b-link>
+                        </div>
+
+                    </b-col>
+
+                    <b-col cols="6">
+                        
+                        <div class="articles-container">
+					<div class="card" id="nuestraHistoria">
+						<span class="content-title">NUESTRA HISTORIA</span>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Similique placeat dolores deleniti sunt, illum, ab corrupti
-							vitae mollitia quia eius, blanditiis praesentium ratione
-							ipsam maiores amet culpa illo. Ipsum, excepturi?
+							Tamales Do&ntilde;a Juanita surgio como un peque&ntilde;o negocio desde 1982,
+                            gracias a la aceptaci&oacute;n de la comunidad nos expandimos hacia la atenci&oacute;n
+                            de eventos, en los cuales atendiamos con la mayor amabilidad e higiene, sin dejar de lado nuestro
+                            sas&oacute;n que ha conquistado los segundos corazones de las personas, es decir, los 
+                            estomagos &#128523;.
 						</p>
 					</div>
-
-					<div class="card">
-						<span class="content-title">Articulo 2</span>
+                    <div class="card" id="ahora">
+						<span class="content-title">TAMALES DO&Ntilde;A JUANA AHORA</span>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Similique placeat dolores deleniti sunt, illum, ab corrupti
-							vitae mollitia quia eius, blanditiis praesentium ratione
-							ipsam maiores amet culpa illo. Ipsum, excepturi?
+							Hoy en d&iacute;a Tamales Do&ntilde;a Juanita cuenta con m&aacute;s de 40 sucursales por
+                            toda la zona metropolitana de Guadalajara, con servicio para llevar o para consumir en 
+                            cada uno de nuestros locales, contamos con las instalaciones ideales para hacer su 
+                            estadia de lo m&aacute;s placentera; en nuestro menu encontraras adem&aacute;s de nuestra
+                            amplia gama de diferentes tamales, bebidas ideales para su acompa&ntilde;amiento y de
+                            deliciosos postres.
 						</p>
 					</div>
-
-					<div class="card">
-						<span class="content-title">Articulo 3</span>
+                    <div class="card" id="mision">
+						<span class="content-title">MISI&Oacute;N</span>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Similique placeat dolores deleniti sunt, illum, ab corrupti
-							vitae mollitia quia eius, blanditiis praesentium ratione
-							ipsam maiores amet culpa illo. Ipsum, excepturi?
+							Tamales Do&ntilde;a Juanita tiene el objeto de continuar con su expansi&oacute;n, llegar
+                            a conquistar m&aacute;s estomagos dentro de la republica, no solo de la zona metropolitana 
+                            de Guadalajara y ampliar los diversos estilos de tamales que se encuentran en todo el Pa&iacute;s.
+						</p>
+					</div>
+                    <div class="card" id="vision">
+						<span class="content-title">VISI&Oacute;N</span>
+						<p>
+							Tamales Do&ntilde;a a trav&eacute;s de la primera expansi&oacute;n hacia el resto del estado de 
+                            Jalisco adquirir&aacute; las diversas variantes de estilos de tamales del lugar, contratando 
+                            cocineros o cocineras que realcen la diversidad de cada uno de los nuevos lugares.
 						</p>
 					</div>
 				</div>
-				<aside class="advertising-container">
-					<span>Publicidad</span>
-				</aside>
-			</div>
 
+                    </b-col>
+
+                    <b-col cols="3">
+
+                        <aside class="advertising-container">
+                            <img src="../assets/donaJuana.jpg" alt="" style="height:600px;">
+                        </aside>
+
+                    </b-col>
+                </b-row>
+
+				
+
+			</div>
 			<footer>
 				<span>Tamales Doña Juana © 2021</span>
 			</footer>
@@ -108,10 +88,18 @@
 
 </template>
 
+
 <script>
+
+import { BLink } from 'bootstrap-vue'
+
+
 export default 
 {
-    
+    components:
+    {
+        BLink, 
+    },
 }
 </script>
 

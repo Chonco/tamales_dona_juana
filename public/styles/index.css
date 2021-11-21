@@ -3,11 +3,11 @@ header {
 	flex-direction: column;
 	justify-content: center;
 
-	background-image: url('../images/tamales_fondo2.jpg');
+	background-image: url('../images/tamailosFondo.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	
-	height: 84vh;
+	height: 32vh;
 	width: 100%;
 }
 
@@ -28,7 +28,7 @@ h4 {
 }
 
 .content-page {
-	width: 70%;
+	width: 100%;
 	margin-top: 2rem;
 	display: flex;
 }
@@ -38,12 +38,10 @@ h4 {
 }
 
 .card {
-	margin-right: 10rem;
-	margin-bottom: 2rem;
-	padding: 1.5rem;
-
-	border-radius: 15px;
-	border: 1px solid #CED4DA;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	text-align: justify;
+	margin-left: 1rem;
 }
 
 .content-title {
