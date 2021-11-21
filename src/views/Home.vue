@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="home-general-container">
-      <header>
+      <header class="home-header">
         <h1 class="elemento_header">Tamales Doña Juana</h1>
       </header>
       <b-row class="contenido mt-4 match-height">
@@ -43,10 +43,6 @@
           />
         </b-col>
       </b-row>
-
-      <footer>
-        <span>Tamales Doña Juana © 2021</span>
-      </footer>
     </div>
   </div>
 </template>
@@ -72,7 +68,7 @@ export default {
   max-width: 100%;
 }
 
-header {
+.home-header {
   background-image: url("../assets/header_tamal2.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -149,18 +145,6 @@ header {
 .articulos-item-text {
   color: #000000;
   font-family: "Eczar", serif;
-}
-
-footer {
-  align-self: end;
-  display: flex;
-  justify-content: center;
-  color: #f0a70a;
-  font-weight: bold;
-  width: 85%;
-  padding: 15px;
-  font-family: "Bilbo Swash Caps", cursive;
-  font-size: 25px;
 }
 
 .a_card {

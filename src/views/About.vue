@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="general-container">
-      <header>
+      <header class="acerca-de-nosotros-header">
         <h1 class="header-element">ACERCA DE NOSOTROS</h1>
       </header>
 
@@ -80,9 +80,6 @@
           </b-col>
         </b-row>
       </div>
-      <footer>
-        <span>Tamales Doña Juana © 2021</span>
-      </footer>
     </div>
   </div>
 </template>
@@ -100,9 +97,9 @@ export default {
 
 <style>
 .general-container {
-  width: 100%;
+  width: 99%;
 }
-header {
+.acerca-de-nosotros-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
