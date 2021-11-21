@@ -5,7 +5,7 @@
       <div class="general-container">
 			
 			<header>
-				<h1 class="header-element" >Acerca de nosotros</h1>
+				<h1 class="header-element" >ACERCA DE NOSOTROS</h1>
 			</header>
 
 			<div class="content-page">
@@ -14,10 +14,10 @@
                     <b-col cols="3">
 
 						<div class="card">
-                            <b-link href="#nuestraHistoria" style="text-decoration:none">NUESTRA HISTORIA</b-link><br>
-                            <b-link href="#ahora" style="text-decoration:none">TAMALES DO&Ntilde;A JUANA AHORA</b-link><br>
-                            <b-link href="#mision" style="text-decoration:none">MISI&Oacute;N</b-link><br>
-                            <b-link href="#vision" style="text-decoration:none">VISI&Oacute;N</b-link>
+                            <b-link class="links" href="#nuestraHistoria" >NUESTRA HISTORIA</b-link><br>
+                            <b-link class="links" href="#ahora">TAMALES DO&Ntilde;A JUANA AHORA</b-link><br>
+                            <b-link class="links" href="#mision" >MISI&Oacute;N</b-link><br>
+                            <b-link class="links" href="#vision" >VISI&Oacute;N</b-link>
                         </div>
 
                     </b-col>
@@ -105,6 +105,63 @@ export default
 
 <style>
 
+    header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 
+	background-image: url('../assets/tamailosFondo.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+	height: 32vh;
+	width: 100%;
+    }
+
+    .header-element {
+	text-align: center;
+	color: #ffffff;
+    }
+
+    h1 {
+        font-size: 72px;
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: 200;
+    }
+
+    .content-page {
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+    }
+
+    .articles-container {
+        flex: 3;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+        padding: 1rem;
+        text-align: justify;
+        margin-left: 1rem;
+    }
+
+    .content-title {
+        border-bottom: 2px solid #E85D04;
+    }
+
+    .advertising-container {
+        flex: 1;
+        margin-left: 1rem;
+        background-color: #F48C06;
+    }
+    .links{
+        text-decoration:none
+    }
 
 </style>
