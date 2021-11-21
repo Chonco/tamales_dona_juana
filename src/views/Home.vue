@@ -22,7 +22,7 @@
         </header>
         <div class="contenido">
           <div class="contenedor_articulos">
-            <div class="card1">
+            <div class="card" id="C1">
               <span class="titulo_articulo">Sobre nuestros tamales</span>
                 <p>
                 Conoce a cerca de nuestra tradicional receta para 
@@ -31,7 +31,7 @@
                 </p>
             </div>
 
-            <div class="card2">
+            <div class="card" id="C2">
               <span class="titulo_articulo">Sobre nuestros postres</span>
                 <p>
                 ¿Interesado en algo dulce después de comer?
@@ -39,7 +39,7 @@
                 </p>
             </div>
 
-            <div class="card3">
+            <div class="card" id="C3">
               <span class="titulo_articulo">Especialidades de la casa</span>
                 <p>
                 Explora las diversas alternativas de nuestros productos.
@@ -120,37 +120,27 @@ header{
   flex: 3;
 }
 
-.card1{
+.card{
   margin-right: 10rem;
 	margin-bottom: 2rem;
 	padding: 1.5rem;
 	border-radius: 15px;
 	border: 1px solid #CED4DA;
+	height: 100px;
+}
+#C1{
   background-image: url("../assets/card1.png");
   background-repeat: no-repeat;
-	height: 100px;
 }
 
-.card2{
-  margin-right: 10rem;
-	margin-bottom: 2rem;
-	padding: 1.5rem;
-	border-radius: 15px;
-	border: 1px solid #CED4DA;
+#C2{
   background-image: url("../assets/card2.png");
   background-repeat: no-repeat;
-	height: 100px;
 }
 
-.card3{
-  margin-right: 10rem;
-	margin-bottom: 2rem;
-	padding: 1.5rem;
-	border-radius: 15px;
-	border: 1px solid #CED4DA;
+#C3{
   background-image: url("../assets/card3.png");
   background-repeat: no-repeat;
-	height: 100px;
 }
 
 .titulo_articulo{
