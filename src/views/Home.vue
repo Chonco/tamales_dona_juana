@@ -1,41 +1,43 @@
 <template>
   <div class="home">
-    <div class="container">
+    <div class="home-general-container">
       <header>
         <h1 class="elemento_header">Tamales Doña Juana</h1>
       </header>
-      <div class="contenido">
-        <div class="contenedor_articulos">
-          <div class="card" id="C1">
-            <span class="titulo_articulo"
-              ><a href="" class="a_card">nuestros tamales</a></span
-            >
+      <b-row class="contenido mt-4 match-height">
+        <b-col cols="9" class="contenedor_articulos">
+          <div class="articulos-item" id="C1">
+            <span class="titulo_articulo">
+              <a href="" class="a_card">nuestros tamales</a>
+            </span>
             <p>
               Conoce a cerca de nuestra tradicional receta para concinar tamales
               de manera tradicional. ¡Justo como tu abuelita los haria!
             </p>
           </div>
 
-          <div class="card" id="C2">
-            <span class="titulo_articulo"
-              ><a href="" class="a_card">Sobre nuestros postres</a></span
-            >
+          <div class="articulos-item" id="C2">
+            <span class="titulo_articulo">
+              <a href="" class="a_card">Sobre nuestros postres</a>
+            </span>
             <p>
               ¿Interesado en algo dulce después de comer? Conoce nuestra
               variedad de postres tradicionales.
             </p>
           </div>
 
-          <div class="card" id="C3">
-            <span class="titulo_articulo"
-              ><a href="" class="a_card">Especialidades de la casa</a></span
-            >
+          <div class="articulos-item" id="C3">
+            <span class="titulo_articulo">
+              <a href="" class="a_card">Especialidades de la casa</a>
+            </span>
             <p>Explora las diversas alternativas de nuestros productos.</p>
           </div>
-        </div>
+        </b-col>
 
-        <aside class="contenedor_publicidad"></aside>
-      </div>
+        <b-col cols="3">
+          <img class="contenedor-publicidad" src="../assets/publicidad_ejemplo.png" />
+        </b-col>
+      </b-row>
 
       <footer>
         <span>Tamales Doña Juana © 2021</span>
@@ -46,24 +48,19 @@
 
 <script>
 // @ is an alias to /src
+import { BRow, BCol } from "bootstrap-vue";
 
 export default {
   name: "Home",
-  components: {},
+  components: { BRow, BCol },
 };
 </script>
 
 <style>
-html,
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Noto Sans", sans-serif;
-  height: 100%;
-  color: #212529;
+.home {
+  width: 100%;
 }
-
-.container {
+.home-general-container {
   display: grid;
   justify-items: center;
   height: 100%;
@@ -96,23 +93,25 @@ header {
   color: #dd8501;
 }
 
-.contenido {
-  margin-top: 3rem;
+.contenedor_articulos {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contenido {
   width: 75%;
 }
 
-.contenedor_articulos {
-  flex: 3;
-}
-
-.card {
-  margin-right: 10rem;
+.articulos-item {
   margin-bottom: 2rem;
   padding: 1.5rem;
   border-radius: 15px;
   border: 1px solid #ced4da;
-  height: 100px;
+}
+
+.articulos-item:last-child {
+  margin-bottom: 0;
 }
 
 #C1 {
@@ -137,9 +136,7 @@ header {
   color: #522405;
 }
 
-.contenedor_publicidad {
-  flex: 1;
-  margin-left: 1rem;
+.contenedor-publicidad {
   border-radius: 15px;
   background-image: url("../assets/publicidad_ejemplo.png");
 }
