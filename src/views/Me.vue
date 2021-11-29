@@ -1,13 +1,14 @@
 <template>
-  <h3>Me</h3>
+  <profile :isMe="true" />
 </template>
 
 <script>
-export default {
+import Profile from "./Profile.vue";
 
-}
+export default {
+  components: { Profile },
+};
 </script>
 
 <style>
-
 </style>

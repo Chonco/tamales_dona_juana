@@ -65,6 +65,15 @@ const routes = [
 		},
 	},
 	{
+		path: "/profile",
+		name: "profile",
+		component: () => import("../views/Profile.vue"),
+		meta: {
+			requiresLogged: false,
+			redirectIfLoggedIn: false,
+		},
+	},
+	{
 		path: "/create-post",
 		name: "create-post",
 		component: () => import("../views/CreatePost.vue"),
