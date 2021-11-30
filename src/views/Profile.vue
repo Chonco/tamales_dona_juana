@@ -47,17 +47,6 @@ export default {
     }
   }
 };
-/*
-var post_list = new Vue({
-  el: '#post_list',
-  data: {
-    items: [
-      { mensaje: 'Taquitos de puerco'},
-      { mensaje: 'Albondigas'}
-    ]
-  }
-});
-*/
 </script>
 
 <style>

@@ -60,7 +60,7 @@ const routes = [
 		name: "me",
 		component: () => import("../views/Me.vue"),
 		meta: {
-			requiresLogged: true,
+			requiresLogged: false,
 			redirectIfLoggedIn: false,
 		},
 	},
