@@ -91,6 +91,7 @@ const routes = [
 			redirectIfLoggedIn: false,
 		},
 	},
+	{ path: "*", redirect: { name: "Home" } },
 ];
 
 const router = new VueRouter({

@@ -25,9 +25,13 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+
+  height: 100vh;
 }
 
 #nav a.router-link-exact-active {
