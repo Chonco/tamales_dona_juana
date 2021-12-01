@@ -2,8 +2,8 @@
 	<section class="all-posts-page">
 		<h2>Todos los posts publicados por nuestra comunidad</h2>
 
-		<b-row class="posts-general-container">
-			<b-col xl="4" lg="6" v-for="post in posts" :key="post.id">
+		<b-row class="mt-1">
+			<b-col xl="4" lg="6" v-for="post in posts" :key="post.id" class="mt-4">
 				<b-card
 					no-body
 					class="post-card"
@@ -112,9 +112,6 @@ export default {
 .all-posts-page {
 	height: 90%;
 	width: 80%;
-}
-.posts-general-container {
-	margin-top: 5rem;
 }
 .post-card {
 	cursor: pointer;

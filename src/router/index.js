@@ -18,11 +18,7 @@ const routes = [
 	{
 		path: "/about",
 		name: "About",
-		// route level code-splitting
-		// this generates a separate chunk (about.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
-		component: () =>
-			import(/* webpackChunkName: "about" */ "../views/About.vue"),
+		component: () => import("../views/About.vue"),
 		meta: {
 			redirectIfLoggedIn: false,
 			requiresLogged: false,
@@ -69,7 +65,7 @@ const routes = [
 		name: "me",
 		component: () => import("../views/Me.vue"),
 		meta: {
-			requiresLogged: false,
+			requiresLogged: true,
 			redirectIfLoggedIn: false,
 		},
 	},
@@ -78,7 +74,7 @@ const routes = [
 		name: "create-post",
 		component: () => import("../views/CreatePost.vue"),
 		meta: {
-			requiresLogged: false,
+			requiresLogged: true,
 			redirectIfLoggedIn: false,
 		},
 	},
@@ -88,7 +84,7 @@ const routes = [
 		component: () => import("../views/EditPost.vue"),
 		props: true,
 		meta: {
-			requiresLogged: false,
+			requiresLogged: true,
 			redirectIfLoggedIn: false,
 		},
 	},

@@ -1,5 +1,10 @@
 <template>
-	<post-template :edit="true" :prevText="text" :prevTitle="title" />
+	<post-template
+		:edit="true"
+		:prevText="text"
+		:prevTitle="title"
+		:postId="postId"
+	/>
 </template>
 
 <script>
@@ -14,20 +19,14 @@ export default {
 			type: Number,
 			required: true,
 		},
-	},
-	data() {
-		return {
-      title: '',
-      text: ''
-		};
-	},
-  async created() {
-
-  },
-	methods: {
-    async getPost() {
-      
-    }
+		text: {
+			type: String,
+			required: true,
+		},
+		title: {
+			type: String,
+			required: true,
+		},
 	},
 };
 </script>

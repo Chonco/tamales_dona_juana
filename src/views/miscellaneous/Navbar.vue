@@ -12,6 +12,9 @@
 			<span class="navbar-item link" @click="toCreatePost" v-if="isLoggedIn">
 				Crear Post
 			</span>
+			<span @click="toMe" v-if="isLoggedIn">
+				<UserIcon class="navbar-item cart-icon" />
+			</span>
 			<span @click="logout" v-if="isLoggedIn">
 				<LogoutIcon class="navbar-item cart-icon" />
 			</span>
@@ -25,12 +28,14 @@
 <script>
 import LogoutIcon from "./LogoutIcon.vue";
 import LoginIcon from "./LoginIcon.vue";
+import UserIcon from "./UserIcon.vue";
 import { isUserLoggedIn } from "../../auth/utils";
 
 export default {
 	components: {
 		LogoutIcon,
 		LoginIcon,
+		UserIcon,
 	},
 	data() {
 		return {
@@ -55,6 +60,9 @@ export default {
 		},
 		toCreatePost() {
 			this.$router.push({ name: "create-post" });
+		},
+		toMe() {
+			this.$router.push({ name: "me" });
 		},
 	},
 	created() {
@@ -86,6 +94,7 @@ export default {
 	margin-right: 10px;
 }
 .navbar-item:last-child {
+	margin-left: 15px;
 	margin-right: 0;
 }
 .navbar-item.link {

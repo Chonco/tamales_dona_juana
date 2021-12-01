@@ -23,7 +23,10 @@
 			</b-col>
 		</b-row>
 		<b-row align-h="center" class="mt-4">
-			<b-col xl="7" lg="10" md="12">
+			<b-col xl="7" lg="10" md="12" class="d-flex justify-content-around">
+				<b-button variant="danger" @click="deletePost" v-if="edit"
+					>Eliminar</b-button
+				>
 				<b-button variant="success" @click="savePost"> Guardar </b-button>
 			</b-col>
 		</b-row>
@@ -97,7 +100,7 @@ export default {
 					throw new Error("Error saving article");
 				}
 
-				this.$router.push({ name: "posts" });
+				this.$router.push({ name: "me" });
 			} catch (error) {
 				console.log(error);
 			}
@@ -114,7 +117,22 @@ export default {
 					throw new Error("Error saving article");
 				}
 
-				this.$router.push({ name: "posts" });
+				this.$router.push({ name: "me" });
+			} catch (error) {
+				console.log(error);
+			}
+		},
+		async deletePost() {
+			try {
+				const postDeleteResponse = await this.axios.delete(
+					`article/${this.postId}`,
+				);
+
+				if (!postDeleteResponse) {
+					throw new Error("Error saving article");
+				}
+
+				this.$router.push({ name: "me" });
 			} catch (error) {
 				console.log(error);
 			}
