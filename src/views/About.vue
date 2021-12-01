@@ -46,7 +46,6 @@
   </div>
 </template>
 
-
 <script>
 
 
@@ -64,19 +63,19 @@ export default {
   text-align: justify;
 }
 .general-container {
-  width: 99%;
+	width: 99%;
 }
 .acerca-de-nosotros-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 
   background-image: url("../assets/fondo_about.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
 
-  height: 32vh;
-  width: 100%;
+	height: 32vh;
+	width: 100%;
 }
 
 .header-element {
@@ -96,21 +95,21 @@ h4 {
 }
 
 .content-page {
-  width: 100%;
-  margin-top: 2rem;
+	width: 100%;
+	margin-top: 2rem;
 
-  display: flex;
+	display: flex;
 }
 
 .articles-container {
-  flex: 3;
+	flex: 3;
 }
 
-.card {
-  margin-bottom: 1rem;
-  padding: 1rem;
-  text-align: justify;
-  margin-left: 1rem;
+.about-custom-card {
+	margin-bottom: 1rem;
+	padding: 1rem;
+	text-align: justify;
+	margin-left: 1rem;
 }
 
 .content-title {
