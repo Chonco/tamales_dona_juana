@@ -27,6 +27,8 @@ axiosInst.interceptors.request.use((config) => {
   return config;
 });
 
+Vue.prototype.$EventBus = new Vue();
+
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 Vue.use(VueAxios, axiosInst);

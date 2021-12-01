@@ -4,7 +4,7 @@
 			<header class="home-header">
 				<h1 class="elemento_header">Tamales Doña Juana</h1>
 			</header>
-			<b-row class="contenido mt-4 match-height">
+			<b-row class="home-content mt-4 match-height">
 				<b-col cols="9" class="contenedor_articulos">
 					<div class="articulos-item" id="C1">
 						<span class="titulo_articulo">
@@ -114,7 +114,7 @@ export default {
 	justify-content: space-between;
 }
 
-.contenido {
+.home-content {
 	width: 75%;
 }
 

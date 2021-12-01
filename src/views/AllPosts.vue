@@ -3,14 +3,12 @@
 		<h2>Todos los posts publicados por nuestra comunidad</h2>
 
 		<b-row class="posts-general-container">
-			<b-col xl="4" lg="6">
+			<b-col xl="4" lg="6" v-for="post in posts" :key="post.id">
 				<b-card
 					no-body
 					class="post-card"
 					border-variant="dark"
 					@click="showPostDetails(post)"
-					v-for="post in posts"
-					:key="post.id"
 				>
 					<b-card-header class="post-card-header">
 						<b-card-title class="mb-0"> {{ post.title }} </b-card-title>

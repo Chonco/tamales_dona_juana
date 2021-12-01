@@ -47,6 +47,15 @@ const routes = [
 		},
 	},
 	{
+		path: "/logout",
+		name: "logout",
+		component: () => import("../views/Logout.vue"),
+		meta: {
+			redirectIfLoggedIn: false,
+			requiresLogged: true,
+		},
+	},
+	{
 		path: "/posts",
 		name: "posts",
 		component: () => import("../views/AllPosts.vue"),
@@ -65,20 +74,11 @@ const routes = [
 		},
 	},
 	{
-		path: "/profile",
-		name: "profile",
-		component: () => import("../views/Profile.vue"),
-		meta: {
-			requiresLogged: false,
-			redirectIfLoggedIn: false,
-		},
-	},
-	{
 		path: "/create-post",
 		name: "create-post",
 		component: () => import("../views/CreatePost.vue"),
 		meta: {
-			requiresLogged: true,
+			requiresLogged: false,
 			redirectIfLoggedIn: false,
 		},
 	},
@@ -86,8 +86,9 @@ const routes = [
 		path: "/edit-post",
 		name: "edit-post",
 		component: () => import("../views/EditPost.vue"),
+		props: true,
 		meta: {
-			requiresLogged: true,
+			requiresLogged: false,
 			redirectIfLoggedIn: false,
 		},
 	},

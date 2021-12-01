@@ -1,26 +1,35 @@
 <template>
-  <post-template :edit="true" :prueba="metodoPrueba()"/>
+	<post-template :edit="true" :prevText="text" :prevTitle="title" />
 </template>
 
 <script>
 import PostTemplate from "./PostTemplate.vue";
 
 export default {
-  components: {
-    PostTemplate,
+	components: {
+		PostTemplate,
+	},
+	props: {
+		postId: {
+			type: Number,
+			required: true,
+		},
+	},
+	data() {
+		return {
+      title: '',
+      text: ''
+		};
+	},
+  async created() {
+
   },
-  data() {
-    return {
-      pruebas: "Pruebas de valor."
+	methods: {
+    async getPost() {
+      
     }
-  },
-  methods: {
-    metodoPrueba() {
-      return 'Prueba de método.';
-    }
-  }
+	},
 };
 </script>
 
-<style>
-</style>
+<style></style>

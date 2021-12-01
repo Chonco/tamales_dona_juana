@@ -1,13 +1,13 @@
 <template>
 	<div>
-		<div class="general-container">
+		<div class="about-general-container">
 			<header class="acerca-de-nosotros-header">
 				<div class="background-col-transbox">
 					<h1 class="header-element">EL BLOG DE TAMALES DOÑA JUANITA</h1>
 				</div>
 			</header>
 
-			<div class="content-page">
+			<div class="about-content-page">
 				<b-row>
 					<b-col cols="9">
 						<div class="articles-container">
@@ -62,7 +62,7 @@ export default {
 	font-size: 20px;
 	text-align: justify;
 }
-.general-container {
+.about-general-container {
 	width: 99%;
 }
 .acerca-de-nosotros-header {
@@ -85,7 +85,7 @@ export default {
 	font-weight: 300;
 }
 
-.content-page {
+.about-content-page {
 	width: 100%;
 	margin-top: 2rem;
 
